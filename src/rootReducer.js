@@ -1,3 +1,5 @@
 import { combineReducers } from "redux";
-
-export default combineReducers({});
+import timerDashboardReducer from "./TimerDashboard/reducer";
+export default combineReducers({
+  timerDashboardReducer: timerDashboardReducer
+});

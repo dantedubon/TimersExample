@@ -15,7 +15,7 @@ export const createTimer = timer => {
 export const updateTimer = attrs => {
   return {
     type: UPDATE_TIMER,
-    payload: attrs
+    payload: { ...attrs }
   };
 };
 export const deleteTimer = timerId => {
